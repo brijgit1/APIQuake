@@ -1,0 +1,36 @@
+{
+  "apis": [
+    {
+      "name": "GetUsers",
+      "method": "GET",
+      "url": "https://reqres.in/api/users?page=2",
+      "headers": {},
+      "params": {},
+      "expected_status": 200,
+      "expected_keys": ["page", "per_page", "data"]
+    },
+    {
+      "name": "GetSingleUser",
+      "method": "GET",
+      "url": "https://reqres.in/api/users/2",
+      "headers": {},
+      "params": {},
+      "expected_status": 200,
+      "expected_keys": ["data", "support"]
+    },
+    {
+      "name": "CreateUser",
+      "method": "POST",
+      "url": "https://reqres.in/api/users",
+      "headers": {
+        "Content-type": "application/json; charset=UTF-8"
+      },
+      "payload": {
+        "name": "B B SINGH",
+        "job": "Architect"
+      },
+      "expected_status": 201,
+      "expected_keys": ["createdAt"]
+    }
+  ]
+}

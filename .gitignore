@@ -1,0 +1,27 @@
+# .gitignore
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# VS Code
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Environment variables or secret configs
+.env
+
+# PyCharm IDE settings files
+.idea/
