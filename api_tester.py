@@ -19,10 +19,10 @@ def run_api_test(api):
 
         resp_content = response.json() if "application/json" in response.headers.get("Content-Type", "") else {}
 
-        # ✅ Validate status code
+        # Validate status code
         status_pass = response.status_code == expected_status
 
-        # ✅ Validate response keys if it's a dict or a list of dicts
+        # Validate response keys if it's a dict or a list of dicts
         key_pass = False
         if isinstance(resp_content, dict):
             key_pass = all(key in resp_content for key in expected_keys)
